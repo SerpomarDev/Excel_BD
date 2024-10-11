@@ -1,7 +1,7 @@
 {
     "builds": [
       {
-        "src": "poblar_db.py",
+        "src": "poblar_bd.py",
         "use": "@vercel/python",
         "config": { "maxLambdaSize": "15mb" }
       }
@@ -9,7 +9,7 @@
     "routes": [
       {
         "src": "/(.*)",
-        "dest": "poblar_db.py"
+        "dest": "poblar_bd.py"
       }
     ]
   }
